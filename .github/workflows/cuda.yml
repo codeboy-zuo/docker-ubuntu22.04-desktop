@@ -38,7 +38,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: ubuntu-desktop
-        file: ubuntu-desktop/${{env.UBUNTU_VERSION}}/Dockerfile
+        file: ubuntu-desktop/Dockerfile
         platforms: linux/amd64
         build-args: |
           BASE_IMAGE=nvidia/cuda:${{env.CUDA_VERSION}}-runtime-ubuntu${{env.UBUNTU_VERSION}}
