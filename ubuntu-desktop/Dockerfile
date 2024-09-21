@@ -60,10 +60,6 @@ Pin-Priority: 1001" > /etc/apt/preferences.d/mozilla-firefox &&\
 RUN bash /config/install_nomachine.sh &&\
     groupmod -g 2000 nx 
 
-## Install kasmvnc
-RUN bash /config/install_kasmvnc.sh &&\
-    rm -rf /var/lib/apt/lists/*
-
 ## Configure ssh 
 RUN mkdir /var/run/sshd &&  \
     echo root:$PASSWORD | chpasswd && \
