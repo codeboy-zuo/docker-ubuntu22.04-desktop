@@ -14,7 +14,7 @@ ENV REMOTE_DESKTOP=nomachine
 ENV VNC_THREADS=2
 
 ## Copy config
-COPY config /docker_config
+COPY config /config
 
 ## Install and Configure OpenGL
 RUN apt-get update && \
