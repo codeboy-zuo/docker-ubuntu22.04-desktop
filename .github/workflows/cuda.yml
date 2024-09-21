@@ -44,5 +44,5 @@ jobs:
           BASE_IMAGE=nvidia/cuda:${{env.CUDA_VERSION}}-runtime-ubuntu${{env.UBUNTU_VERSION}}
         push: true
         tags: |
-          codeboy-zuo/docker-ubuntu22.04-desktop:${{env.UBUNTU_VERSION}}-cu${{env.CUDA_VERSION}}
+          cbboy/docker-ubuntu22.04-desktop:${{env.UBUNTU_VERSION}}-cu${{env.CUDA_VERSION}}
 #          registry.cn-hongkong.aliyuncs.com/gezp/ubuntu-desktop:${{env.UBUNTU_VERSION}}-cu${{env.CUDA_VERSION}}
