@@ -1,0 +1,29 @@
+services:
+  desktop1:
+    restart: always
+    image: cbboy/docker-ubuntu22.04-desktop:22.04-cu12.4.0
+    environment:
+      - USER=labuser01
+      - PASSWORD=labuser01
+      - NVIDIA_VISIBLE_DEVICES=all
+    ports:
+      - "40001:4000"
+      - "22001:22"
+    privileged: true
+    container_name: labuser01
+    runtime: nvidia
+
+  desktop2:
+    restart: always
+    image: cbboy/docker-ubuntu22.04-desktop:22.04-cu12.4.0
+    environment:
+      - USER=labuser02
+      - PASSWORD=labuser02
+      - NVIDIA_VISIBLE_DEVICES=all
+    ports:
+      - "40002:4000"
+      - "22002:22"
+    privileged: true
+    container_name: labuser02
+    runtime: nvidia
+
