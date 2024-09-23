@@ -39,4 +39,5 @@ thanks to the authors of following related projects:
 ## **注意**！！！
 
 > 由于gezp大佬没有构建我想要的版本，所用 copy 一下
-> 本次构建只是为了适配实验室服务器的cuda版本，可能存在一些未知bug，有问题提issue，我们一起解决
+> 
+> 本次构建只是为了适配实验室服务器的cuda版本，可能存在一些未知bug，有问题提issue，我们一起解决，enjoy~
