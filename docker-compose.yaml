@@ -12,6 +12,7 @@ services:
     privileged: true
     container_name: labuser01
     runtime: nvidia
+    shm_size: "10g"
 
   desktop2:
     restart: always
@@ -26,4 +27,5 @@ services:
     privileged: true
     container_name: labuser02
     runtime: nvidia
+    shm_size: "10g"
 
